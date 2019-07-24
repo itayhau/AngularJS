@@ -9,12 +9,10 @@
 </head>
 <body >
 
-    <div ng-controller="parentCtrl">
+    <div ng-controller="parentCtrl as p">
 
-        <p ng-repeat = "todo in todos">{{todo}} {{todo.title}}</p>
 
-        <p ng-repeat = "todo in todos">{{todo.userId}} {{todo.title}}</p>
-
+        <p>{{todos}}</p>
     </div>
 
     
