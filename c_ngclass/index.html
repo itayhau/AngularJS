@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="dataApp">
+<head>
+    <title>Clock!</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+
+    <script src="parentCtrl.js"></script>
+</head>
+<body >
+
+    <div ng-controller="parentCtrl">
+        <p ng-class="{missing : name == '', ok : name != '' }">NAME : <input type="text" ng-model="name" ng-class="name == '' ? 'missing' : 'ok'"></p>
+        <p ng-class="getClass()">ID  : <input type="text" ng-model="id" ng-class="id == '' ? 'missing' : 'ok'"></p>
+        <p>PHONE : <input type="text" ng-model="ph" ng-class="ph == '' ? 'missing' : 'ok'"></p>
+    </div>
+
+    
+    <br>
+</body>
+</html>
