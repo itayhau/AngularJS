@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="dataApp">
+<head>
+    <title>Clock!</title>
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+
+    <script src="parentCtrl.js"></script>
+</head>
+<body >
+
+    <div ng-controller="parentCtrl">
+
+        <p ng-repeat = "todo in todos">{{todo}} {{todo.title}}</p>
+
+        <p ng-repeat = "todo in todos">{{todo.userId}} {{todo.title}}</p>
+
+    </div>
+
+    
+    <br>
+</body>
+</html>
