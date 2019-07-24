@@ -1,0 +1,26 @@
+<html ng-app="manyModulesApp">
+
+    <head>
+        <title>Modules App</title>
+
+        <script src='angular.js'></script>
+       
+        <!-- import modules -->
+        <script src="mySecondModule.js"></script>
+
+        <!-- bootstrap -->
+        <script src='bootstrap.js'></script>
+
+    </head>
+
+    <body>
+        <h1>Modules App</h1>
+
+        <div ng-controller="HelloCtrl as hello">
+            <p>Hi I am hello ctrl from second module</p>
+            <p>{{hello.helloMessage}}</p>
+         </div>
+         <br>
+    </body>
+
+</html>

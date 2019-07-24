@@ -1,0 +1,1 @@
+const appModule = angular.module("manyModulesApp", ["mySecondModule"]);
